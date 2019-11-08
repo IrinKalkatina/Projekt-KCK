@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lange ="pl">
+    <head>
+        <meta charset ="UTF-8">
+        <meta name="description" content="Opis strony"/>
+        <title>Travel with me</title> 
+    </head>
+    <body>
+        <div class="container">
+        <header>
+            <h1><span>TRAVEL WITH ME</span></h1>
+        </header>
+
+        <section>
+            <article>
+                <h2>Poznaj nas!</h2>
+                <figure></figure>
+                <p align ="center">
+                    Hej! Cieszymy się, ze tu jesteś! Jesteśmy studentkami 2 roku Kognitywistyki, które bardzo lubią podrózować światem. Postanowiłyśmy pomóc kazdej osobie, która dopiero zaczyna zwiedzać świat! Tu zaplanujesz całą podróz zaczynając od dojazdu, koncząc wieloma atrakcjami, które Cię niewątpliwie zaskoczą. 
+                </p>
+                    <img src="img/IMG_0203.jpg"height ="150px"width ="250px">
+                
+                    </imgsrc>
+                <p class ="quote"><i>Twoja Vika i Ira</i></p>
+            </article>
+                <article>
+                    <h2>Co znajdziesz na naszej stronie:</h2>
+                    <p>Na naszej stronie zarezerwujesz sobie najlepszą wycieczkę</p>
+
+
+                </article>
+        </section>
+        <aside>
+                <h2><span>Kontynenty</span></h2>
+                <ul>
+                    <li>Afryka</li>
+                    <li>Ameryka</li>
+                    <li>Azja</li>
+                    <li>Europa</li>
+                </ul>
+        </aside>
+     
+        <!--About our company section end-->
+        <br>
+        <a href ="https://www.google.com/flights?lite=0#flt=/m/0845b..2019-11-16*./m/0845b.2019-11-20;c:PLN;e:1;a:W6,W9*W6,W9;sd:1;t:h" target ="_blank">Travel with wizzair</a>
+
+        <h3><span>Kraje, które mozesz zwiedzić</span></h3>
+        <h4><span>Contact us</span></h4>
+        <form>
+            <input name="Name" type="text"/><br/>
+            <input name="Email" type="email/><br/>
+            <textarea name="message"></textarea>
+            <br>
+            <input type="checkbox" name="gender"
+            value ="1"/>Man<br/>
+            <input type="checkbox" name="gender"
+            value ="2"/>Woman<br/>
+            <input type="submit" value="Wysłać :)"
+        </form>
+        <footer>Wszystkie prawa zastrzezone.</footer>
+        </div>
+    </body>
+
+</html>
