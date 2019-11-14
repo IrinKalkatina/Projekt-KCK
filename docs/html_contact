@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+ <html lange ="pl">
+ <head>
+<meta charset ="UTF-8">
+<meta name="description" content="Zacznij podrózować juz dziś."/>
+<meta namie="keywords" content="travel, podróze, loty, hotele"/>
+<title>Travel with me/contact</title>
+<link rel="stylesheet"
+<link rel="stylesheet" href="contact.css">
+
+
+</head>
+<body>
+    <div id="container_contact">
+        <div class="rectangle">
+            <div id="logo">Travel with me</div>
+            <div id="zegar">12:00</div>
+            <div style="clear:both;"></div>
+        </div>
+        <div class="squere">
+            <div class="tile1">Hello</div>
+            <div class="tile1">Nasz numer kontaktowy</div>
+            <div style="clear:both;"></div>
+
+            <div class="tile2">Last minute</div>
+            <div class="tile3">To najpiękniejsze miejsca na świecie</div>
+            <div style="clear:both;"></div>
+
+
+        </div>
+        <div class="squere"></div>
+        <div style="clear:both";></div>
+        <div class="rectangle"></div>
+
+    </div>
+
+
+</body>
+
+
+
