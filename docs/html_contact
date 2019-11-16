@@ -11,31 +11,65 @@
 
 </head>
 <body>
+    <header class='site-header clearfix'>
+        <h1 class="My site">Travel with me</h1>
+    
+    </header>
     <div id="container_contact">
+    
         <div class="rectangle">
-            <div id="logo">Travel with me</div>
-            <div id="zegar">12:00</div>
+        
             <div style="clear:both;"></div>
         </div>
         <div class="squere">
-            <div class="tile1">Hello</div>
-            <div class="tile1">Nasz numer kontaktowy</div>
+            <div class="tile1">1</div> <!--tutaj wpiszemy numer kontaktowy-->
+            <div class="tile1">1</div> <!-- Tutaj photo-->
             <div style="clear:both;"></div>
 
-            <div class="tile2">Last minute</div>
-            <div class="tile3">To najpiękniejsze miejsca na świecie</div>
+            
+
+            <div class="tile2">2</div><!--tutaj photo-->
+            <div class="tile3">3</div><!--tutaj gmail-->
             <div style="clear:both;"></div>
 
+            <div class="squere"></div>
+
+            <div class="tile4">4</div><!--tutaj cytat jak wazne podroze-->
+                
+            </div>
+            <div class="squere"></div>
+
+            <div class="photo"><!-- tutaj progblem.. chce zdjecie duze w prawej stronie nad znaczkami sieci spolecznosciowymi, nie wiem jak zrobic?-->
+                
+            </div>
 
         </div>
-        <div class="squere"></div>
-        <div style="clear:both";></div>
-        <div class="rectangle"></div>
+        
+        <div class="squere">
+           
+            <div class="yt">Youtube</div> <!--tutaj bedA znaczki tych sieci-->
+            <div class="instagram">Instagram</div>
+            <div class="fc">Facebook</div>
+            <div style="clear:both;"></div>
+        
+        </div>
+        
+            
+        
+        <div style="clear:both;"></div>
+
+        <div class="rectangle">2019 &copy Travel with me. Podrózój razem z nami! Skontaktuj się z nami! Nasz gmail: travelwithme@gmail.com</div>
 
     </div>
 
 
 </body>
+
+</html>
+
+
+
+
 
 
 
