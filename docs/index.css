@@ -12,11 +12,12 @@
 }
 #nav{
     float:left;
-    background-color: cornflowerblue;
-    width: 100px;
+    /* background-color: cornflowerblue; */
+    width: 500px;
     min-height:100px;
-    padding:10px;
-}
+    padding:0px;
+    margin: 0px;
+} 
 #content{
     float:left;
     padding:20px;
@@ -31,12 +32,12 @@
     padding: 20px;
 }
 
+
 .button{
-    margin: 25px 1% ;  /* отступы от слова до рамки */
+    margin: 15px 1% ;  /* отступы от слова до рамки */
     display: block; /* елементы отображ блочно и вряд (не текст) */
     color: white;
     background: black;
-    /* text-align: right; */
     text-decoration: none; /* без подчеркивания */
     font-weight: 700;
     user-select: none;  /* без выделения уже прочитанных ссылок */
