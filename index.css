@@ -1,0 +1,121 @@
+#container{
+    width;: 1000px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+#logo{
+    background-color:rgb(182, 184, 222);
+    color:black;
+    text-align:center;
+    padding:10px;
+}
+#nav1{
+    float:left;
+    /* background-color: cornflowerblue; */
+    width: 250px;
+    min-height:1900px;
+    padding:0px;
+    margin: 0px;
+    background-color:green;
+} 
+#nav2{
+    float:right;
+    /* background-color: cornflowerblue; */
+    width: 250px;
+    min-height:1900px;
+    padding:0px;
+    margin: 0px;
+    background-color:blueviolet;
+}
+#content{
+    float:left;
+    padding:20px;
+    width:600px;
+    
+}
+#footer{
+    clear:both;
+    background-color:blanchedalmond;
+    color:black;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.button{
+    margin: 15px 1% ;  /* отступы от слова до рамки */
+    display: inline-block; /* елементы отображ блочно и вряд (не текст) */
+    color:rgb(9, 9, 82);
+    background:rgb(90, 176, 186);
+    text-decoration: none; /* без подчеркивания */
+    font-weight: 700;
+    user-select: none;  /* без выделения уже прочитанных ссылок */
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 5px;
+    transition: 250ms; /* плавность */ 
+} 
+
+.button:hover  /* при наведении сверху */
+{
+    background: DeepSkyBlue;
+}
+
+.button:active /* при нажатии */
+{
+    background: white;
+}
+#spis{
+    width:780px;
+    padding-left:100px;
+}
+ol{
+    margin-top:5px;
+
+}
+ol > li
+{
+    font-size:22px;
+    text-transform:uppercase;
+    font-weight: 700;
+    padding: 5px;
+    letter-spacing:3px;
+}
+
+ol>li>ul
+{
+    font-size:18px;
+    text-transform: none;
+    font-weight: 400;
+    padding:0px;
+    letter-spacing: 0px;
+    margin-top:5px;
+    margin-left:30px;
+    list-style-type:none;
+
+
+}
+ol>li>ul>li
+{
+    margin:0px;
+}
+ol>li>ul>li:before
+{
+    color:rgb(0, 242, 226)
+    content:☑;
+    margin-right:5px;
+
+}
+.slajd{
+    padding:20px 40px;
+    text-align:center;
+}
+h1
+{
+    font-size:24px;
+    text-transform:uppercase;
+    font: weight 700;
+
+}
