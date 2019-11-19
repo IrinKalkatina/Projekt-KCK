@@ -1,0 +1,129 @@
+body
+{
+    background-image:url(img/ladne-tlo-akwarela_24837-261.jpg);
+    color:black;
+    text-align:center;
+    
+}
+
+#container
+{
+    width:100%;
+    margin-left:auto;
+    margin-right:auto;
+}
+.rectangle
+{
+    width:100%;
+    margin:20px;
+    text-align:center;
+}
+.square
+{
+    width:50%;
+    float:left;
+}
+
+#logo
+{
+    float:left;
+    font-family:'Josefin Sans',sans-serif;
+    font-size:20px;
+    width:100%;
+    height:150px;
+
+    text-align:center;
+    background-image:url(img/wood-1866667_960_720.jpg);
+       
+}
+.button{
+    margin: 15px 1% ;  /* отступы от слова до рамки */
+    display: inline-block; /* елементы отображ блочно и вряд (не текст) */
+    color:rgb(9, 9, 82);
+    background:rgb(90, 176, 186);
+    text-decoration: none; /* без подчеркивания */
+    font-weight: 700;
+    user-select: none;  /* без выделения уже прочитанных ссылок */
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 5px;
+    transition: 250ms; /* плавность */ 
+} 
+
+.button:hover  /* при наведении сверху */
+{
+    background: DeepSkyBlue;
+}
+
+.button:active /* при нажатии */
+{
+    background: white;
+}
+
+.tile1
+{
+   margin:10px;
+   width:250px;
+   height:142px;
+   float:left;
+}
+
+
+
+.tile2
+{
+    margin:10px;
+    width:250px;
+    height:142px;
+    float:left;  
+}
+
+.tile3
+{
+    margin:10px;
+    width:250px;
+    height:142px;
+    float:left;  
+}
+
+.tile4
+{
+    margin:10px;
+    width:470px;
+    height:142px;
+    float:left;
+    text-align:center;
+}
+.tile5{
+    margin:10px;
+    width:480px;
+    height:304px;
+    float:left;
+}
+
+.yt
+{
+    margin:10px;
+    width:145px;
+    height:142px;
+    float:left;
+
+}
+
+.fc
+{
+    margin:10px;
+    width:145px;
+    height:144px;
+    float:left;  
+}
+.instagram
+{
+    margin:10px;
+    width:145px;
+    height:72px;
+    float:left;  
+}
+
+
