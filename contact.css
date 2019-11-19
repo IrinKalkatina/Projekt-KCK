@@ -1,19 +1,20 @@
 body
 {
-    background-color:blanchedalmond;
+    background-image:url(img/ladne-tlo-akwarela_24837-261.jpg);
     color:black;
- 
-
+    text-align:center;
+    
 }
+
 #container
 {
-    width:1000px;
+    width:100%;
     margin-left:auto;
     margin-right:auto;
 }
 .rectangle
 {
-    width:960px;
+    width:100%;
     margin:20px;
     text-align:center;
 }
@@ -27,17 +28,44 @@ body
 {
     float:left;
     font-family:'Josefin Sans',sans-serif;
-    font-size:70px;
-    width:600px;
+    font-size:20px;
+    width:100%;
+    height:150px;
+
     text-align:center;
+    background-image:url(img/wood-1866667_960_720.jpg);
+       
+}
+.button{
+    margin: 15px 1% ;  /* отступы от слова до рамки */
+    display: inline-block; /* елементы отображ блочно и вряд (не текст) */
+    color:rgb(9, 9, 82);
+    background:rgb(90, 176, 186);
+    text-decoration: none; /* без подчеркивания */
+    font-weight: 700;
+    user-select: none;  /* без выделения уже прочитанных ссылок */
+    padding: .5em 2em;
+    outline: none;
+    border: 2px solid;
+    border-radius: 5px;
+    transition: 250ms; /* плавность */ 
+} 
+
+.button:hover  /* при наведении сверху */
+{
+    background: DeepSkyBlue;
+}
+
+.button:active /* при нажатии */
+{
+    background: white;
 }
 
 .tile1
 {
    margin:10px;
-   width:230px;
+   width:250px;
    height:142px;
-   background-color:blanchedalmond;
    float:left;
 }
 
@@ -46,18 +74,16 @@ body
 .tile2
 {
     margin:10px;
-    width:230px;
+    width:250px;
     height:142px;
-    background-color:greenyellow;
     float:left;  
 }
 
 .tile3
 {
     margin:10px;
-    width:230px;
+    width:250px;
     height:142px;
-    background-color:blanchedalmond;
     float:left;  
 }
 
@@ -66,7 +92,6 @@ body
     margin:10px;
     width:470px;
     height:142px;
-    background-color:blanchedalmond;
     float:left;
     text-align:center;
 }
@@ -82,7 +107,6 @@ body
     margin:10px;
     width:145px;
     height:142px;
-    background-color:blanchedalmond;
     float:left;
 
 }
@@ -92,7 +116,6 @@ body
     margin:10px;
     width:145px;
     height:144px;
-    background-color:blanchedalmond;
     float:left;  
 }
 .instagram
@@ -100,7 +123,7 @@ body
     margin:10px;
     width:145px;
     height:72px;
-    background-color:blanchedalmond;
     float:left;  
 }
+
 
