@@ -3,7 +3,6 @@ from django.core.files.storage import FileSystemStorage
 
 
 def index(request):
-    print('Home')
     return render(request, 'index.html')
 
 
@@ -11,6 +10,13 @@ def country(request):
    return render (request, 'country.html' )
 
 
+def register(request):  #booking
+   return render (request, 'register.html' )
+
+
 def contact(request):
-    print('Contact')
     return render(request, 'contact.html')
+
+
+def quiz(request):
+    return render(request, 'quiz.html')
