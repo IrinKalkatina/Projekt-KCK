@@ -6,7 +6,7 @@ def index(request):
     return render(request, 'index.html')
 
 
-def country(request):
+def countries(request):
    return render (request, 'country.html' )
 
 

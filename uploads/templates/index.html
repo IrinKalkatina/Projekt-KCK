@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
  <html lange ="pl">
  <head>
@@ -5,7 +6,7 @@
 <meta name="description" content="Zacznij podrózować juz dziś."/>
 <meta namie="keywords" content="travel, podróze, loty, hotele"/>
 <title>Travel with me</title>
-<link rel="stylesheet" href="index.css"> <!-- współpraca z plikiem css (sprawdż nazwę pliku) -->  <!-- SPRAWDŹ NAZWĘ pliku -->
+<link rel="stylesheet" href="{% static 'css/index.css' %}"> <!-- współpraca z plikiem css (sprawdż nazwę pliku) -->  <!-- SPRAWDŹ NAZWĘ pliku -->
 </head>
 
 <body>
@@ -14,13 +15,12 @@
         <div class="rectangle">
             <div style="clear:both;"></div>
         
-        
             <div id="logo">
             <h2>TRAVEL WITH ME &copy</h2>
                 <div class="Buttons"> <!--To ma być na początku każdego pliku ze ztroną-->
                 <!--Przeciski dla przejścia na inne podstrony-->
                     <a class="button" href="/main">MAIN</a>
-                    <a class="button" href="/country/">COUNTRIES</a>
+                    <a class="button" href="/countries/">COUNTRIES</a>
                     <a class="button" href="/booking">BOOKING</a>
                     <a class="button" href="/contact/">CONTACT</a>
                     <a class="button" href="/quiz">QUIZ</a>
@@ -29,48 +29,47 @@
         
             <div class="square">
                 <div class="tile6">
-                    <img src="img/egipt3.jpg" width="230" height="242">
+                    <img src="{% static 'img/egipt3.jpg' %}" width="230" height="242">
              
                 </div>
+
                 <div class="tile8">
                     <h1>KTO MY?</h1>
-                    <p>Jesteśmy studentkami II roku Kognitywistyki. Uwielbiamy podróżować światem.</p>
+                    <p>Jesteśmy studentkami II roku Kognitywistyki. Uwielbiamy zwiedzać świat.</p>
                 
-
                 </div>
+
                 <div class="tile6">
-                    <img src="img/Szwajcaria-jezioro.jpg"width="230" height="242">
+                    <img src="{% static 'img/Szwajcaria-jezioro.jpg' %}" width="230" height="242">
 
                 </div>
 
                 <div style="clear:both;"></div>
 
                 <div class="tile6">
-                    <img src="img/Saas-Fee-36-995x498.jpg"width="230" height="242">
-                
-
+                    <img src="{% static 'img/Saas-Fee-36-995x498.jpg' %}" width="230" height="242">
+            
                 </div>
+
                 <div class="tile8">
                     <h1>O czym ta strona?</h1>
                     <p>Ten blog to Twój pomocnik w ogranizowaniu Twojej wymażonej podróży.</p>
     
                 </div>
+
                 <div class="tile6">
-                    <img src="img/Tokio-swiatynia-gora-fuji-Depositphotos_49239255_original-1000x667px.jpg"width="230" height="242">
+                    <img src="{% static 'img/Tokio-swiatynia-gora-fuji-Depositphotos_49239255_original-1000x667px.jpg' %}" width="230" height="242">
                 </div>
    
- 
-        </div>
+            </div>
         
 
             <div id="footer">
             Wszelkie prawa zastrzezone.&copy;
             </div>
-        
+        </div>
         
     </div>
-
-
 
 </body> 
 </html>

@@ -4,8 +4,7 @@
 
 }
 body{
-    background-image: url(img/ladne-tlo-akwarela_24837-261.jpg);
-    
+    background-color: rgba(176, 118, 230, 0.418);
     
 }
 #container{
@@ -16,7 +15,7 @@ body{
 }
 
 #logo{
-    background-image:url(img/wood-1866667_960_720.jpg);
+    background-image:url("/static/img/wood-1866667_960_720.jpg");
     color:black;
     text-align:center;
     padding:10px;
@@ -98,7 +97,7 @@ h1
     width:530px;
     height:242px;
     float:left;
-    background-image: url(img/wood-1866667_960_720.jpg);
+    background-image: url("/static/img/wood-1866667_960_720.jpg");
     text-align:center;
     font-size:40px;
 }

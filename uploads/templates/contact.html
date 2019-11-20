@@ -1,48 +1,52 @@
+{% load static %}
+ <!-- z django-css -->
 <!DOCTYPE html>
  <html lange ="pl">
  <head>
-<meta charset ="UTF-8">
-<meta name="description" content="Zacznij podrózować juz dziś."/>
-<meta namie="keywords" content="travel, podróze, loty, hotele"/>
-<title>Travel with me/contact</title>
-<link rel="stylesheet">
-<link rel="stylesheet" href="contact.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Nie wiem czy będziemy to wykoezystywać-->
-<style>
-.fa {
-    padding: 20px;
-    font-size: 50px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-    }
-    
-.fa:hover {
-    opacity: 0.7;
-    }
-    
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-    }
-    
-    
-.fa-youtube {
-    background: #bb0000;
-    color: white;
-    }
-    
-    .fa-instagram {
-    background: #125688;
-    color: white;
-    }
-    
-    
-    
-    
-</style>
+    <meta charset ="UTF-8">
+    <meta name="description" content="Zacznij podrózować juz dziś."/>
+    <meta namie="keywords" content="travel, podróze, loty, hotele"/>
+    <title>Travel with me/contact</title>
+    <!-- <link rel="stylesheet"> -->
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> Nie wiem czy będziemy to wykoezystywać -->
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}"> <!-- współpraca z plikiem css (sprawdż nazwę pliku) -->  <!-- SPRAWDŹ NAZWĘ pliku -->
+
+    <style>
+    .fa {
+        padding: 20px;
+        font-size: 50px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+        }
+        
+    .fa:hover {
+        opacity: 0.7;
+        }
+        
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+        }
+        
+        
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+        }
+        
+        .fa-instagram {
+        background: #125688;
+        color: white;
+        }
+        
+        
+        
+        
+    </style>
 
 </head>
 
@@ -52,7 +56,7 @@
             <div class="Buttons"> <!--To ma być na początku każdego pliku ze ztroną-->
                 <!--Przeciski dla przejścia na inne podstrony-->
                     <a class="button" href="/main">MAIN</a>
-                    <a class="button" href="/country/">COUNTRIES</a>
+                    <a class="button" href="/countries/">COUNTRIES</a>
                     <a class="button" href="/booking">BOOKING</a>
                     <a class="button" href="/contact/">CONTACT</a>
                     <a class="button" href="/quiz">QUIZ</a>
@@ -75,17 +79,17 @@
 
         <div class="square">
             <div class="tile1">
-                <img src="img/telefon.png" width="230" height="142">
+                <img src="{% static 'img/telefon.png' %}" width="230" height="142">
             </div>
             <div class="tile1">
-                <img src="img/pexels-photo-417142.jpeg"width="230" height="142">
+                <img src="{% static 'img/pexels-photo-417142.jpeg'%}" width="230" height="142">
             </div>
             <div style="clear:both;"></div>
 
             
  
             <div class="tile2">
-                <img src="img/Saas-Fee-36-995x498.jpg" width="230" height="142">
+                <img src="{% static 'img/Saas-Fee-36-995x498.jpg' %}" width="230" height="142">
 
             </div>
           
@@ -93,7 +97,7 @@
             <!--tutaj photo-->
         
             <div class="tile3">
-                <img src="img/Velikosti-dopisnich-obalek.jpg"width="230" height="142">
+                <img src="{% static 'img/Velikosti-dopisnich-obalek.jpg' %}"width="230" height="142">
                <!--<h2>+48 546 786 29</h2>--> 
                <!--<h3>Nasz gmail: travel_with_me@gmail.com</h3>--> 
             </div><!--tutaj gmail-->
@@ -112,7 +116,7 @@
             <!-- tutaj progblem.. chce zdjecie duze w prawej stronie nad znaczkami sieci spolecznosciowymi, nie wiem jak zrobic?-->
             <div class="square">
                 <div class="tile5">
-                    <img src="img/Szwajcaria-jezioro.jpg" width="480" height="304">
+                    <img src="{% static 'img/Szwajcaria-jezioro.jpg' %}" width="480" height="304">
                 </div>
             </div>
             <div class="square">
