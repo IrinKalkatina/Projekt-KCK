@@ -17,11 +17,32 @@ class Register_ankieta(models.Model):
         ('K', 'Kobieta'),
         ('M', 'Męzczyzna'),
     ]
+    
+    # <label for="name">Imię i nazwisko:</label>
+    # <input id="name" type="text" required autofocus="true">
+    # </div>
+    # <div class="row">
+    # <label for="email">Adres e-mail:</label>
+    # <input id="email" type="email" required>
+    # </div>
 
-
-    name = models.CharField(max_length=30) #поля модели; atrybut clasy; komórka bazy danych
+    first_name = models.CharField(max_length=30) #поля модели; atrybut clasy; komórka bazy danych
+    last_name = models.CharField(max_length=30)
     country_choises = models.CharField(max_length=1, choices=COUNTRY_CHOISES) 
     gender_choises = models.CharField(max_length=1, choices=GENDER_CHOISES) 
 
+    def b_status(self):
+        #returns status
+        #import datetime
+        if cośtam:
+            return "komunikat1"
+        elif cośtam:
+            return "komunikat2"
+        else cośtam:
+            return "komunikat3"
+
+    def full_name(self):
+        #returns the person's full name
+        return '%s %s' % (self.first_name, self.last_name)
 
 
