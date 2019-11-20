@@ -4,7 +4,7 @@
 
 }
 body{
-    background-color: rgba(176, 118, 230, 0.418);
+    background-color: rgba(176, 118, 230, 0.856);
     
 }
 #container{
@@ -15,7 +15,8 @@ body{
 }
 
 #logo{
-    background-image:url("/static/img/wood-1866667_960_720.jpg");
+    /* background-image:url("/static/img/wood-1866667_960_720.jpg"); */
+    background-color: rgba(139, 33, 238, 0.835);
     color:black;
     text-align:center;
     padding:10px;
@@ -97,7 +98,8 @@ h1
     width:530px;
     height:242px;
     float:left;
-    background-image: url("/static/img/wood-1866667_960_720.jpg");
+    /* background-image: url("/static/img/wood-1866667_960_720.jpg"); */
+    background-color: rgba(95, 36, 206, 0.815);
     text-align:center;
     font-size:40px;
 }
