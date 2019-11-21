@@ -36,13 +36,13 @@
                 <form method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
                     Name: <br><br>
-                    <input type="text" value="name" name="name" required><br><br>
+                    <input type="text" value="" name="name" required><br><br>
                     Surname: <br><br>
-                    <input type="text" value="surname" name="surname" required><br><br>
+                    <input type="text" value="" name="surname" required><br><br>
                     Email: <br><br>
-                    <input type="email" value="email@example.com" name="email" required><br><br>
+                    <input type="email" value="" name="email" required><br><br>
                     Country to visit: <br><br>
-                    <input type="text" value="example" name="country" required><br><br>
+                    <input type="text" value="" name="country" required><br><br>
                     <input type="submit" value="Send">
                 </form>
                 {% if display %}
