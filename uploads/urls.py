@@ -8,6 +8,5 @@ urlpatterns = [
     url('main/', views.index, name='main'),
     url('countries/', views.countries, name='country'),
     url('booking/', views.register, name='register'),
-    url('contact/', views.contact, name='contact'),
-    url('quiz/', views.quiz, name='quiz'),
+    url('contact/', views.contact, name='contact')
 ]

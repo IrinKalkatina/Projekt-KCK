@@ -1,88 +1,60 @@
 {% load static %}
 <!DOCTYPE html>
- <html lange ="pl">
-    <head>
-        <meta charset ="UTF-8">
-        <meta name="description" content="Zacznij podrózować juz dziś."/>
-        <meta namie="keywords" content="travel, podróze, loty, hotele"/>
-        <title>Travel with me</title>
-        <link rel="stylesheet" href="{% static 'css/register.css' %}"> 
-        <link rel="stylesheet" href="{% static 'css/index.css' %}"> <!-- współpraca z plikiem css (sprawdż nazwę pliku) -->  <!-- SPRAWDŹ NAZWĘ pliku -->
-    </head>
+<html lange="pl">
 
-    <body>
-        <div id=”container”>
-            <div id="logo">
-                <h1>TRAVEL WITH ME &copy</h1>
-                <div class="Buttons"> <!--To ma być na początku każdego pliku ze ztroną-->
-                    <!--Przeciski dla przejścia na inne podstrony-->
-                        <a class="button" href="/main">MAIN</a>
-                        <a class="button" href="/countries/">COUNTRIES</a>
-                        <a class="button" href="/booking">BOOKING</a>
-                        <a class="button" href="/contact/">CONTACT</a>
-                        <a class="button" href="/quiz">QUIZ</a>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Zacznij podrózować juz dziś." />
+    <meta namie="keywords" content="travel, podróze, loty, hotele" />
+    <title>Travel with me</title>
+    <link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}"> <!-- współpraca z plikiem css (sprawdż nazwę pliku) -->
+    <!-- SPRAWDŹ NAZWĘ pliku -->
+</head>
+
+<body>
+    <div id=”container”>
+        <div id="logo">
+            <h1>TRAVEL WITH ME &copy</h1>
+            <div class="Buttons">
+                <!--To ma być na początku każdego pliku ze ztroną-->
+                <!--Przeciski dla przejścia na inne podstrony-->
+                <a class="button" href="/main">MAIN</a>
+                <a class="button" href="/countries/">COUNTRIES</a>
+                <a class="button" href="/booking">BOOKING</a>
+                <a class="button" href="/contact/">CONTACT</a>
             </div>
-
-            
-            <div id="content">
-                <div class="section">
-                    
-                    <h1>Ankieta podróznika</h1>
-                    <h2>Wypełnij ankietę i dostaniesz na swoją skrzynkę mailową idealnie zaplanowaną podróz.</h2>
-                    <form action="#"method="post" autocomplete="off">
-                        <div class="row">
-                            <label for="name">Imię i nazwisko:</label>
-                            <input id="name" type="text" required autofocus="true">
-
-                        </div>
-                        <div class="row">
-                            <label for="email">Adres e-mail:</label>
-                            <input id="email" type="email" required>
-
-                        </div>
-
-                        <div class="row">
-
-                            <label for="genger">Płeć:</label>
-                            <select id="gender">
-                                <option>Męzczyzna</option>
-                                <option>Kobieta</option>
-                            </select>
-                        </div>
-
-                        <div class="row">
-
-                            <label for="country">Wybierz kraj:</label>
-                            <input id="country" type="text" list="countries">
-                            <datalist id="countries">
-                                <option>Egipt</option>
-                                <option>Brazylia</option>
-                                <option>Szwecja</option>
-                                <option>Japonia</option>
-                            </datalist>
-                            
-                        
-                        </div>
-
-                        <div class="row">
-                            <input id="rules" type="checkbox" required>
-                                <span>Administratorem danych jest spółka Travel with me S.J. <br/> Zatwierdź regulamin.</span>
-                            </label>
-                        </div>
-
-                        <div class="row">
-                            <input type="submit">
-                        </div>
-                    </form>
-                
-                </section>
-            
-            </div>
-
-                    <div id="footer">
-                        Wszelkie prawa zastrzezone.&copy;
-                    </div>
         </div>
-    </body>
+
+
+        <div id="content">
+            <div class="section">
+
+                <h1>Ankieta podróznika</h1>
+                <h2>Wypełnij ankietę i dostaniesz na swoją skrzynkę mailową idealnie zaplanowaną podróz.</h2>
+
+                <form method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    Name: <br><br>
+                    <input type="text" value="name" name="name" required><br><br>
+                    Surname: <br><br>
+                    <input type="text" value="surname" name="surname" required><br><br>
+                    Email: <br><br>
+                    <input type="email" value="email@example.com" name="email" required><br><br>
+                    Country to visit: <br><br>
+                    <input type="text" value="example" name="country" required><br><br>
+                    <input type="submit" value="Send">
+                </form>
+                {% if display %}
+                   {{ text }}
+                {% endif %}
+
+            </div>
+
+            <div id="footer">
+                Wszelkie prawa zastrzezone.&copy;
+            </div>
+        </div>
+</body>
+
 </html>
