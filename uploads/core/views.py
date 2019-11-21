@@ -26,15 +26,14 @@ def register(request):  #booking
         f.close()
         unforbiden = ["africa", "afryka", "egipt", "egypt"]
         if country.lower() not in unforbiden:
-            text = fullname + ", dziękujemy za zainteresowanie się naszymi ofertami. Niestety nie mamy aktyalnie żadnych turów do " + country + ". Kiedy pojawi się oferta, wyślemy ją pod adresem: " + email
+            text = fullname + ", dziękujemy za zainteresowanie się naszymi ofertami. Niestety nie mamy aktualnie żadnych turów do " + country + ". Kiedy pojawi się oferta, wyślemy ją pod adresem: " + email
         else:
             text = fullname + ", dziękujemy za zainteresowanie się naszymi ofertami. Już wysłaliśmy maila dotyczącego aktualnych turów do " + country + " pod adresem: " + email
-        if country in ["africa", "afryka", "африка"]:
-            text += "\n Ciekawostka: czy wiesz, że w " + country + " jest gorąco?"
-        elif country in ["egipt", "egypt"]:
+        if country in ["africa", "afryka", "Africa", "Afryka", "африка"]:
+            text += "\n Ciekawostka: czy wiesz, że kontynent " + country + " składa się z 54 krajów i jednego terytorium?"
+        elif country in ["egipt", "egypt", "Egipt", "Egypt"]:
             text += "\n Ciekawostka: czy wiesz, że w " + country + " są girafy?"
-        else:
-            text += "\n Nie dowiesz się o żadnych ciekawostkach z " + country
+
         return render(request, 'register.html', { 'display': True, 'text': text })
         
     return render(request, 'register.html', { 'display': False })
