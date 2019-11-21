@@ -28,7 +28,7 @@
 
 
         <div id="content">
-            <div class="section">
+            <div class="section" style="margin-left: 20%;">
 
                 <h1>Ankieta podróznika</h1>
                 <h2>Wypełnij ankietę i dostaniesz na swoją skrzynkę mailową idealnie zaplanowaną podróz.</h2>
@@ -45,15 +45,18 @@
                     <input type="text" value="" name="country" required><br><br>
                     <input type="submit" value="Send">
                 </form>
+                
+
+            </div>
+            <div style="margin-top: 35%; margin-left: 5%;">
                 {% if display %}
-                   {{ text }}
+                    <br/>
+                    <hr>
+                    <br/>
+                    <p style="color: white;">{{ text }}</p>
                 {% endif %}
-
             </div>
-
-            <div id="footer">
-                Wszelkie prawa zastrzezone.&copy;
-            </div>
+            
         </div>
 </body>
 
